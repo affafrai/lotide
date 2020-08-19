@@ -22,9 +22,9 @@ const eqArrays = function(testArr1,testArr2) {
 
   const flatten = function(arrayToFlatten){
     let newArr = [];
-    for(let i = 0; i < arrayToFlatten.length; i++){
+    for(let i = 0; i < arrayToFlatten.length; i++) {
       if( Array.isArray(arrayToFlatten[i])) {
-        for(let j = 0; j < arrayToFlatten[i].length; j++){
+        for(let j = 0; j < arrayToFlatten[i].length; j++) {
           newArr.push(arrayToFlatten[i][j]);
         }
       } else newArr.push(arrayToFlatten[i]);

@@ -25,17 +25,24 @@ let testValue = "";
   }
 }
 
-const assertArrayEqual = function(arr1,arr2,compare){
+const assertArraysEqual = function(arr1,arr2){
+  console.log(`${arr1}`);
+  //assertEqual(eqArrays(arr1, arr2), compare);
+  let eqArraysValue = eqArrays(arr1, arr2);
+  //console.log(eqArraysValue);
+  if (eqArraysValue === true) {
+    console.log(`✅✅✅ assertion passed : ${arr1} ===  ${arr2}`);
+  } else {console.log(`🛑🛑🛑 assertion failed : ${arr1} !== ${arr2}`);}
 
-  assertEqual(eqArrays(arr1, arr2), compare);
+  //  assertEqual(arr1, arr2);
 
-
+  //}
 }
 
 
-assertArrayEqual([1, 2, 3], [1, 2, 3] , true);
-assertArrayEqual(["1", "2", "3"], ["1", "2", "3"], true);
-assertArrayEqual(["1", "2", "3"], ["1", "2", 3], false); // => should PASS
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
+assertArraysEqual(["1", "2", undefined], ["1", "2", "3"]);
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => should PASS
 //assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => should PASS
 //assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should PASS
 //assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => should PASS
