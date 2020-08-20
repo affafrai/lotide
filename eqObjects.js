@@ -35,16 +35,13 @@ const eqObjects = function(object1, object2) {
         if(eqArrays(object1[key], object2[key])) {
           continue;
         } else return false;
-      } else {if(object1[key] === object2[key]) {
+      } else { if(object1[key] === object2[key]) {
              continue;
           } else return false;
-
-      }
-     
+      }   
     }
     return true;
   } else return false;
-
 };
 
 const ab = { a: "1", b: "2" };

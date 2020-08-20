@@ -51,5 +51,6 @@ let compare = letterPositions("lighthouse in the house");
 console.log(letterPositions("lighthouse in the house"));
 console.log(compare["i"]);
 assertArraysEqual(compare["i"],[ 1, 11 ]);
+//different way to call and pass a value into object
 assertArraysEqual(letterPositions("hello").e, [1]);
 
