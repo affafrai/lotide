@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@affaf-js-dev/lotide" ,
   "version": "1.0.0",
-  "description": "",
+  "description": "tail, head, middle of arrays",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/affafrai/lotide.git"
   },
-  "author": "",
+  "author": "affaf rai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/affafrai/lotide/issues"
